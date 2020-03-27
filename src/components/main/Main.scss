@@ -1,0 +1,17 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container > .header {
+  .title {
+    margin-bottom: 2%;
+
+    font-size: 2.5em;
+    font-weight: 800;
+  }
+  .desc {
+    font-size: 1.2em;
+    font-weight: normal !important;
+  }
+}

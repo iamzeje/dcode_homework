@@ -1,0 +1,158 @@
+.ico-unlike {
+  display: inline-block;
+
+  width: 14px;
+  height: 14px;
+
+  background: url('../../images/ico_unlike.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ico-like {
+  display: inline-block;
+
+  width: 14px;
+  height: 14px;
+
+  background: url('../../images/ico_like.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ico-share {
+  display: inline-block;
+
+  width: 14px;
+  height: 14px;
+
+  background: url('../../images/ico_share.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ico-comment {
+  display: inline-block;
+
+  width: 14px;
+  height: 14px;
+
+  background: url('../../images/ico_comment.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.list-view-container {
+  width: 100%;
+  height: 100%;
+}
+
+.list-view-container > .item-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.list-view-container > .item-wrap > .item {
+  display: inline-block;
+
+  margin-bottom: 4%;
+  margin-right: 2%;
+  width: 32%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.list-view-container > .item-wrap > .item > .img-wrap {
+  display: flex;
+
+  margin-bottom: 2%;
+  width: 100%;
+  min-height: 450px;
+
+  .img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    border: 0;
+  }
+}
+
+.list-view-container > .item-wrap > .item > .content-wrap {
+  width: 100%;
+
+  .title {
+    margin-bottom: 2%;
+    width: 100%;
+
+    font-size: 2em;
+  }
+  .desc {
+    display: -webkit-box;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 10%;
+
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    font-size: 1.2em;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: pre-line;
+    overflow: hidden;
+  }
+}
+
+.list-view-container > .item-wrap > .item > .sns-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  width: 100%;
+
+  text-align: right;
+
+  .sns-item {
+    display: flex;
+    margin-right: 4%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .sns-ico {
+      margin-right: 5px;
+    }
+    .sns-count {
+      font-size: 1em;
+      font-weight: 600;
+      color: #a6a7a9;
+    }
+  }
+}

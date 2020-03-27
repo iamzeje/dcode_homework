@@ -1,0 +1,14 @@
+.lazy-load-image-background {
+  display: flex !important;
+
+  width: 100%;
+  height: auto;
+}
+
+.lazy-load-image-background img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  border: 0;
+}

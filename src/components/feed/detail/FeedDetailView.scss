@@ -1,0 +1,314 @@
+.ico-unlike-circle {
+  display: inline-block;
+
+  width: 50px;
+  height: 50px;
+
+  background: url('../../../images/ico_unlike_circle.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    background: url('../../../images/ico_unlike_circle_hover.png') no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+}
+
+.ico-like-circle {
+  display: inline-block;
+
+  width: 50px;
+  height: 50px;
+
+  background: url('../../../images/ico_like_circle.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    background: url('../../../images/ico_like_circle_hover.png') no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+}
+
+.ico-facebook {
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+
+  background: url('../../../images/ico_facebook.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    background: url('../../../images/ico_facebook_hover.png') no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+}
+
+.ico-twitter {
+  display: inline-block;
+
+  width: 19px;
+  height: 19px;
+
+  background: url('../../../images/ico_twitter.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    background: url('../../../images/ico_twitter_hover.png') no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+}
+
+.ico-naver {
+  display: inline-block;
+
+  width: 19px;
+  height: 19px;
+
+  background: url('../../../images/ico_naver.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    background: url('../../../images/ico_naver_hover.png') no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+}
+
+.ico-gmail {
+  display: inline-block;
+
+  width: 19px;
+  height: 19px;
+
+  background: url('../../../images/ico_gmail.png') no-repeat;
+  background-size: contain;
+
+  cursor: default;
+
+  &:hover {
+    background: url('../../../images/ico_gmail_hover.png') no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+  }
+}
+
+.detail-view-container {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-view-container > .item {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 4%;
+  padding: 5% 0;
+  width: 100%;
+  min-height: 450px;
+  max-height: 650px;
+
+  overflow: hidden;
+
+  border-bottom: 1px solid #e3e3e2;
+}
+
+.detail-view-container > .item > .img-wrap {
+  margin-right: 5%;
+  width: 50%;
+  height: 100%;
+
+  .img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    border: 0;
+  }
+}
+
+.detail-view-container > .item > .info-wrap {
+  width: 45%;
+  height: 100%;
+
+  .header {
+    padding-top: 3%;
+
+    border-top: 2px solid #000000;
+
+    .sub-title-wrap {
+      margin-bottom: 1%;
+
+      font-size: 1.3em;
+
+      .name {
+        margin-right: 1%;
+
+        font-weight: 700;
+      }
+      .date {
+        font-weight: 400;
+      }
+    }
+    .title-wrap {
+      margin-bottom: 2%;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-size: 2em;
+        font-weight: 800;
+      }
+    }
+    .sns-wrap {
+      margin-bottom: 2%;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 100%;
+
+      text-align: right;
+
+      .sns-item {
+        display: flex;
+        margin-right: 1%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .sns-ico {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .desc {
+    margin-bottom: 7%;
+    width: 100%;
+
+    font-size: 1.3em;
+    word-break: keep-all;
+    white-space: pre-line;
+  }
+  .tag-wrap {
+    width: 100%;
+
+    word-break: keep-all;
+    font-size: 1.2em;
+    font-weight: 800;
+
+    .tag {
+      margin-right: 3%;
+    }
+  }
+}
+
+.detail-view-container > .item-comment {
+  width: 100%;
+  height: 100%;
+
+  .header {
+    margin-bottom: 2%;
+
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .input-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 100px;
+
+    .input-text {
+      padding: 1.5%;
+      width: 84%;
+      height: 100%;
+      box-sizing: border-box;
+
+      font-size: 1.2em;
+      font-weight: bold;
+
+      outline: 0;
+      border: 1px solid #c1c2c4;
+    }
+    .btn {
+      padding: 3%;
+      width: 15%;
+      height: 100%;
+      box-sizing: border-box;
+
+      font-size: 1.2em;
+      font-weight: bold;
+
+      background-color: #000000;
+      color: #ffffff;
+      border: 1px solid #000000;
+
+      outline: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:disabled {
+        cursor: default;
+
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
+  }
+  .comment-wrap {
+    width: 100%;
+
+    .comment {
+      margin-bottom: 2%;
+      padding: 3% 0;
+
+      border-bottom: 1px solid #e3e3e2;
+
+      .profile {
+        margin-bottom: 1%;
+
+        .name {
+          margin-right: 6%;
+
+          color: #1d1e21;
+        }
+        .date {
+          color: #a6a7a9;
+        }
+      }
+      .text {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
